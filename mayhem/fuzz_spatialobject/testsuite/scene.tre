@@ -1,0 +1,30 @@
+ObjectType = Scene
+NDims = 3
+NObjects = 3
+ObjectType = Tube
+NDims = 3
+ID = 0
+ParentID = -1
+Color = 1 0 0 1
+TransformMatrix = 1 0 0 0 1 0 0 0 1
+Offset = 0 0 0
+ElementSpacing = 1 1 1
+Root = 1
+PointDim = x y z r v1x v1y v1z v2x v2y v2z tx ty tz red green blue alpha id
+NPoints = 2
+Points =
+0 0 0 1 1 0 0 0 1 0 0 0 1 1 0 0 1 0
+1 1 1 2 1 0 0 0 1 0 0 0 1 1 0 0 1 1
+ObjectType = Ellipse
+NDims = 3
+ID = 1
+ParentID = 0
+Radius = 1 2 3
+ObjectType = Landmark
+NDims = 3
+ID = 2
+ParentID = 0
+PointDim = x y z red green blue alpha
+NPoints = 1
+Points =
+1 2 3 1 0 0 1

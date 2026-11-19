@@ -1,0 +1,9 @@
+project: savantenvs/ITK
+target: fuzz_transform_matlab
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_transform_matlab/testsuite
+cmds:
+  - cmd: /mayhem/build-mayhem-fuzz/fuzz_transform_matlab
+    libfuzzer: true
+    timeout: 10

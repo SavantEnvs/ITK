@@ -1,0 +1,9 @@
+project: savantenvs/ITK
+target: fuzz_hdf5
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_hdf5/testsuite
+cmds:
+  - cmd: /mayhem/build-mayhem-fuzz/fuzz_hdf5
+    libfuzzer: true
+    timeout: 10
