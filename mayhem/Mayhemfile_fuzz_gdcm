@@ -1,0 +1,9 @@
+project: savantenvs/ITK
+target: fuzz_gdcm
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_gdcm/testsuite
+cmds:
+  - cmd: /mayhem/build-mayhem-fuzz/fuzz_gdcm
+    libfuzzer: true
+    timeout: 10

@@ -1,0 +1,6 @@
+project: savantenvs/ITK
+target: fuzz_philipsrec
+cmds:
+  - cmd: /mayhem/build-mayhem-fuzz/fuzz_philipsrec
+    libfuzzer: true
+    timeout: 10

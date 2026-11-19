@@ -1,0 +1,9 @@
+project: savantenvs/ITK
+target: fuzz_gifti
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_gifti/testsuite
+cmds:
+  - cmd: /mayhem/build-mayhem-fuzz/fuzz_gifti
+    libfuzzer: true
+    timeout: 10
